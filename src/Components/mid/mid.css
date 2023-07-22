@@ -5,6 +5,7 @@
   flex-direction: column;
   font-family: "Poppins";
   text-align: center;
+  padding-bottom: 50px;
 }
 .key-text {
   color: #f54748;
