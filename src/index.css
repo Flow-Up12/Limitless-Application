@@ -25,10 +25,9 @@ body {
 }
 
 .App {
-  font-family: Poppins;
+  font-family: "Poppins";
   width: 100%;
   max-width: screen;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,13 +37,6 @@ body {
 }
 .red {
   color: red;
-}
-.footer {
-  background: #fef5f5;
-  height: 50vh;
-  padding: 20px;
-  text-align: center;
-  width: 100vw;
 }
 
 .header {
