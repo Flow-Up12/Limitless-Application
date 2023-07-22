@@ -1,12 +1,13 @@
 import React from 'react';
 
+
 function Header() {
   return (
     <div className="header">
       <div className="top-container">
         <img src="/limitless-logo-1.png" alt="Limitless Logo" />
         <div>
-          <button style={{ color: 'red' }}>Home</button>
+          <button className='red'>Home</button>
           <button>Features</button>
           <button>Leaderboard</button>
           <button>
@@ -23,7 +24,16 @@ function Header() {
           <p className="text">Make Learning Enjoyable and Interactive.</p>
           <p className="text2">With Limitless, you can enjoy free chat, video calls, whiteboards, puzzles, and many other amazing features...</p>
         </div>
-        <img src="/removebg-preview-1.png" />
+        <div className='progress'>
+           <div className='progress-box'>
+            <h1>Assingment!</h1>
+            <div className='rectangle'></div>
+            <h2>Complete your assingment!</h2>
+            <h3>Progress 63%</h3>
+           </div>
+           <img src="/removebg-preview-1.png" alt="img" />
+        </div>
+        
       </div>
 
       <div className="bottom-buttons">
