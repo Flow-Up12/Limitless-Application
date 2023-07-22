@@ -1,11 +1,13 @@
-import Header from "./Components/Header"
-import Footer from "./Components/Footer"
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Mid from "./Components/mid/Mid";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Footer/>
+      <Header />
+      <Mid />
+      <Footer />
     </div>
   );
 }
