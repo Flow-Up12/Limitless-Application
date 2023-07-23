@@ -1,6 +1,7 @@
 .header {
   background-color: #FFFFFF;
   max-zoom: 100vw;
+  min-height: 70vh;
   padding: 20px;
   text-align: center;
 }
@@ -11,6 +12,9 @@
   margin-bottom: 10px;
 }
 
+.logo {
+  font-size: 30px;
+}
 /* Styling for the buttons container */
 .top-container {
   width: 100%;
@@ -21,14 +25,10 @@
   margin-right: 50px;
 }
 
-.top-container img {
-  height: 60px;
-  width:  400px;
-  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.8));
-}
+
 
 button {
-  font-size: 14px;
+  font-size: 20px;
   color: #F1DAC4;
   background: none;
   border: none;
@@ -41,34 +41,36 @@ button:hover {
 }
 .middle {
   display: flex;
-  align-items: center;
 }
 
 .middle-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 10px;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  flex-wrap: wrap; 
 }
 
 .text {
   margin-top: -20px;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 60px;
   
 }
 
 .text2 {
-  margin-top: 20px;
+  margin-top: -30px;
+  margin-bottom: -30px;
   font-size: 20px;
   color: #676767
 }
 
 .middle img {
   width: 50vw;
-  height: 30vh;
+  height: 60vh;
   flex-shrink: 0;
-  margin-top: 50px;
+
 }
 
 
@@ -93,76 +95,55 @@ button:hover {
   padding: 5px;
   border-radius: 50%;
 }
-.progress h1 {
-  font-size: 36px;
-  color: red;
-}
-.progress h2 {
-  font-size: 20px;
-}
-.progress h3{
-color: #A5A5A5;
-font-family: Poppins;
-font-size: 10px;
-font-style: normal;
-font-weight: bold;
-line-height: 20px;
-}
-.progress {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  position: relative; 
-}
 
-.progress-box {
-  position: absolute; 
-  left: 55%;
-  background-color: white;
-  border-radius: 10px;
-  filter: drop-shadow(0px 50px 80px rgba(156, 152, 152, 0.48));
-}
-.rectangle {
-  display: block;
-  margin: 0 auto; 
-width: 20px;
-height: 1.762px;
-flex-shrink: 0;
-border-radius: 1px;
-background:
- #FFA610;
-}
+@media only screen and (max-width: 1200px) {
+ 
+  .text{
+    font-size: 60px; 
+    margin-bottom: 30px;
+  }
+  .text2{
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  .bottom-buttons {
+    margin-top: -40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .top-container img {
+    height: 43px;
+    width: 240px;
+    margin-left: 30px;
+  }
+  .top-container{
+    margin-right: -30px;
+  }
 
+  .middle img {
+    width: 45vw;
+    height: 45vh;
+    flex-shrink: 0;
+    margin-top: 50px;
+  }
+
+}
 @media only screen and (max-width: 1000px) {
-
+ 
     .text{
-      margin-top: -60px;
-      font-size: 36px;
+      margin-top: -20px;
+      font-size: 45px;
     }
     .text2{
       font-size: 16px;
+      margin-bottom: 60px;
     }
     .bottom-buttons {
       margin-top: -40px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
-    }
-    .progress h1 {
-      font-size: 26px;
-      color: red;
-    }
-    .progress h2 {
-      font-size: 16px;
-    }
-    .progress h3{
-      font-size: 10px;
-    }
-    .progress-box {
-      left: 40%;
-      min-height: 60px;
-      min-width: 160px;
     }
     .top-container img {
       height: 43px;
@@ -172,16 +153,28 @@ background:
     .top-container{
       margin-right: -30px;
     }
+
+    .middle img {
+      width: 40vw;
+      height: 40vh;
+      flex-shrink: 0;
+      margin-top: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 764px) {
-  
+  button{
+    font-size: 16px;
+  }
   .text{
-    margin-top: -80px;
-    font-size: 30px;
+    margin-top: 0px;
+    font-size: 37px;
   }
   .text2{
-    font-size: 12px;
+    font-size: 14px;
+
+ 
   }
   .bottom-buttons {
     margin-top: -40px;
@@ -197,4 +190,21 @@ background:
   .top-container{
     margin-right: -40px;
   }
+  .red-button {
+    background-color: #F86061;
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+   
+  }
+
+    .middle img {
+      width: 40vw;
+      height: 40vh;
+      flex-shrink: 0;
+      margin-top: 50px;
+    }
+
 }
+

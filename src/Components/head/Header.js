@@ -1,46 +1,40 @@
 import React from 'react';
-import './header.css'
+import HeaderImg from "../assets/header-img.png";
+import './header.css';
 
 function Header() {
   return (
     <div className="header">
       <div className="top-container">
-        <img src="/limitless-logo-1.png" alt="Limitless Logo" />
-        <div>
-          <button className='red'>Home</button>
+        <div className="logo">LIMITLESS</div>
+        <div className="header-links">
+          <button className="red">Home</button>
           <button>Features</button>
           <button>Leaderboard</button>
-          <button>
-            Browse
-            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
-              <path d="M3.5 4L0 0H7L3.5 4Z" fill="#495263" />
-            </svg>
-          </button>
+          <button>Our team</button>
+        </div>
+        <div className="authenticate">
+          <div>Register</div> |
+          <div>Login</div>
         </div>
       </div>
 
       <div className="middle">
         <div className="middle-text">
-          <p className="text">Make Learning Enjoyable and Interactive.</p>
+          <p className="text">Make Learning More Enjoyable and Interactive.</p>
           <p className="text2">With Limitless, you can enjoy free chat, video calls, whiteboards, puzzles, and many other amazing features...</p>
+          <div className="bottom-buttons">
+            <div className="red-button">Create an Account</div>
+            <h4 className="or">OR</h4>
+            <div>Log in</div>
+          </div>
         </div>
+
         <div className='progress'>
-           <div className='progress-box'>
-            <h1>Assingment!</h1>
-            <div className='rectangle'></div>
-            <h2>Complete your assingment!</h2>
-            <h3>Progress 63%</h3>
-           </div>
-           <img src="/removebg-preview-1.png" alt="img" />
+          <img src={HeaderImg} alt="img" />
         </div>
-        
       </div>
 
-      <div className="bottom-buttons">
-        <button className="red-button">Create an Account</button>
-        <h4 className="or">or</h4>
-        <button>Log In</button>
-      </div>
     </div>
   );
 }
