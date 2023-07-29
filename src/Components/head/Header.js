@@ -3,13 +3,14 @@ import HeaderImg from "../assets/header-img.png";
 import './header.css';
 
 function Header() {
+
   return (
     <div className="header">
       <div className="top-container">
         <div className="logo">LIMITLESS</div>
         <div className="header-links">
           <button className="red">Home</button>
-          <button>Features</button>
+          <a href="#features"><button>Features</button></a>
           <button>Leaderboard</button>
           <button>Our team</button>
         </div>
@@ -26,7 +27,7 @@ function Header() {
           <div className="bottom-buttons">
             <div className="red-button">Create an Account</div>
             <h4 className="or">OR</h4>
-            <div>Log in</div>
+            <div className="login-btn">Log in</div>
           </div>
         </div>
 
